@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aeedc3a1-9ba5-45e0-ab88-f33d6da2ba6b" name="Default Changelist" comment="d" />
+    <list id="da0b03ab-ebf8-4145-9eca-203cd5565ab6" name="d" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="347" height="442" key="Diff.GoToChangePopup" timestamp="1616003587821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="347" height="442" key="Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1616003587821" />
+    <state x="434" y="146" width="1128" height="840" key="DiffContextDialog" timestamp="1616003771440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="434" y="146" width="1128" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616003771440" />
+    <state x="668" y="445" key="VCS.ChangelistChooser" timestamp="1616003710368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="445" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1616003710368" />
+    <state x="638" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616003771398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="638" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616003771398" />
+  </component>
+</project>
