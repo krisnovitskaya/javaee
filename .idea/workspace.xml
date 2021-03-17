@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="638e0046-85bf-4c07-b8f7-44f5a9a1dc62" name="Default Changelist" comment="wildfly deploy" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pfhRIU1TK17mZDsYqXNrMfvacp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring/kris-market" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\javaee\number-one-app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="wildfly:deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/number-one-app" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="number-one-app [clean,install...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="wildfly:deploy" />
+                <option value="-Dwildfly.hostname=178.21.11.31" />
+                <option value="-Dwildfly.username=admin" />
+                <option value="-Dwildfly.password=32167" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/number-one-app" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="638e0046-85bf-4c07-b8f7-44f5a9a1dc62" name="Default Changelist" comment="" />
+      <created>1615580043727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615580043727</updated>
+    </task>
+    <task id="LOCAL-00001" summary="FirstServlet app + log">
+      <created>1615583058505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615583058505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="edit gitignor">
+      <created>1616000410948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616000410948</updated>
+    </task>
+    <task id="LOCAL-00003" summary="wildfly deploy">
+      <created>1616002478279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616002478279</updated>
+    </task>
+    <task id="LOCAL-00004" summary="wildfly deploy">
+      <created>1616002566477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616002566477</updated>
+    </task>
+    <task id="LOCAL-00005" summary="wildfly deploy">
+      <created>1616002733595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616002733595</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FirstServlet app + log" />
+    <MESSAGE value="edit gitignor" />
+    <MESSAGE value="wildfly deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="wildfly deploy" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="359" key="#Notifications" timestamp="1616002585380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="465" y="359" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1616002585380" />
+    <state x="0" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616002304431">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616002304431" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1615581216294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615581216294" />
+    <state x="879" y="273" key="FileChooserDialogImpl" timestamp="1615731344990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="879" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615731344990" />
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1615580228224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615580228224" />
+    <state x="833" y="225" key="Github.UntrackedFilesDialog" timestamp="1615580239809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615580239809" />
+    <state width="1195" height="378" key="GridCell.Tab.0.bottom" timestamp="1615587856094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1195" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615587856094" />
+    <state width="1195" height="378" key="GridCell.Tab.0.center" timestamp="1615587856094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1195" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615587856094" />
+    <state width="1195" height="378" key="GridCell.Tab.0.left" timestamp="1615587856094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1195" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615587856094" />
+    <state width="1195" height="378" key="GridCell.Tab.0.right" timestamp="1615587856094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1195" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615587856094" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616002737217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616002737217" />
+    <state x="342" y="181" key="new project wizard" timestamp="1615580476865">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1615580476865" />
+  </component>
+</project>
