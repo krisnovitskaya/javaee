@@ -9,15 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/AccessDeniedServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/FirstHttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/filter/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/filter/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/listener/StartupListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/persist/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/persist/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
