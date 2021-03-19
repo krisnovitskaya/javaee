@@ -26,7 +26,7 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        if (req.getParameter("id") == null) {
+        if (checkPath(req)) {
             resp.getWriter().println("<table>");
             resp.getWriter().println("<tr>");
             resp.getWriter().println("<th>Id</th>");
@@ -37,32 +37,49 @@ public class ProductServlet extends HttpServlet {
 
             for (Product product : productRepository.findAll()) {
                 resp.getWriter().println("<tr>");
-                resp.getWriter().println("<td><a href='" + getServletContext().getContextPath() + "/product?id=" + product.getId() + "'>" + product.getId() + "</a></td>");
+                resp.getWriter().println("<td><a href='" + getServletContext().getContextPath() + "/" + product.getId() + "'>" + product.getId() + "</a></td>");
                 resp.getWriter().println("<td>" + product.getName() + "</td>");
                 resp.getWriter().println("<td>" + product.getDescription() + "</td>");
                 resp.getWriter().println("<td>" + product.getPrice() + "</td>");
                 resp.getWriter().println("</tr>");
             }
             resp.getWriter().println("</table>");
-        } else {
-            Product product = null;
-            try {
-                product = productRepository.findById(Long.parseLong(req.getParameter("id")));
-            }catch (NumberFormatException e){
-                logger.error("Cant parse parameter 'id' to Long");
-            }
+        } else if (checkParam(req)){
+            Product product = productRepository.findById(getIdFromPath(req));
+
             if(product != null){
-            String info = "<p>Product info</p>" +
-                          "<p>ID: " + product.getId() +" </p>" +
+                String info = "<p>Product info</p>" +
+                          "<p>ID: " + product.getId() + " </p>" +
                           "<p>Name: " + product.getName() + " </p>" +
                           "<p>Description: " + product.getDescription() + " </p>" +
-                          "<p>Price: "+ product.getPrice().toString() +" </p>";
-            resp.getWriter().println(info);
-        } else {
-            resp.getWriter().println("<p>Product not exist</p>");
-            resp.getWriter().println("<a href='" + getServletContext().getContextPath() +"'>" + "вернуться к таблице" + "</a>");
+                          "<p>Price: " + product.getPrice().toString() + " </p>";
+                resp.getWriter().println(info);
+            } else {
+                resp.getWriter().println("<p>Product not exist</p>");
+                resp.getWriter().println("<a href='" + getServletContext().getContextPath() + "/product" + "'>" + "вернуться к таблице" + "</a>");
             }
+        } else {
+            resp.getWriter().println("Not found");
         }
 
+    }
+
+    private boolean checkPath(HttpServletRequest req){
+        String path = req.getPathInfo();
+        return path.length() == 9;
+    }
+
+    private boolean checkParam(HttpServletRequest req){
+        try {
+            Long.parseLong(req.getPathInfo().substring(9));
+        }catch (NumberFormatException e){
+            logger.error("wrong path");
+            return false;
+        }
+        return true;
+    }
+
+    private long getIdFromPath(HttpServletRequest req){
+        return Long.parseLong(req.getPathInfo().substring(9));
     }
 }
