@@ -37,7 +37,7 @@ public class ProductServlet extends HttpServlet {
 
             for (Product product : productRepository.findAll()) {
                 resp.getWriter().println("<tr>");
-                resp.getWriter().println("<td><a href='" + getServletContext().getContextPath() + "/" + product.getId() + "'>" + product.getId() + "</a></td>");
+                resp.getWriter().println("<td><a href='" + getServletContext().getContextPath() + "/product/" + product.getId() + "'>" + product.getId() + "</a></td>");
                 resp.getWriter().println("<td>" + product.getName() + "</td>");
                 resp.getWriter().println("<td>" + product.getDescription() + "</td>");
                 resp.getWriter().println("<td>" + product.getPrice() + "</td>");
@@ -66,12 +66,12 @@ public class ProductServlet extends HttpServlet {
 
     private boolean checkPath(HttpServletRequest req){
         String path = req.getPathInfo();
-        return path.length() == 9;
+        return (path == null || path.equals("/"));
     }
 
     private boolean checkParam(HttpServletRequest req){
         try {
-            Long.parseLong(req.getPathInfo().substring(9));
+            Long.parseLong(req.getPathInfo().substring(1));
         }catch (NumberFormatException e){
             logger.error("wrong path");
             return false;
@@ -80,6 +80,6 @@ public class ProductServlet extends HttpServlet {
     }
 
     private long getIdFromPath(HttpServletRequest req){
-        return Long.parseLong(req.getPathInfo().substring(9));
+        return Long.parseLong(req.getPathInfo().substring(1));
     }
 }
