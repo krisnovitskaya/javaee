@@ -1,5 +1,7 @@
 package ru.krisnovitskaya;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.krisnovitskaya.persist.Product;
 import ru.krisnovitskaya.persist.ProductRepository;
 
@@ -12,6 +14,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/product/*")
 public class ProductServlet extends HttpServlet {
+    private static final Logger logger = LoggerFactory.getLogger(ProductServlet.class);
 
     private ProductRepository productRepository;
 
@@ -42,9 +45,24 @@ public class ProductServlet extends HttpServlet {
             }
             resp.getWriter().println("</table>");
         } else {
-            resp.getWriter().println("<p>Product info</p>");
-            resp.getWriter().println("<p>Name: .....</p>");
-            // TODO
+            Product product = null;
+            try {
+                product = productRepository.findById(Long.parseLong(req.getParameter("id")));
+            }catch (NumberFormatException e){
+                logger.error("Cant parse parameter 'id' to Long");
+            }
+            if(product != null){
+            String info = "<p>Product info</p>" +
+                          "<p>ID: " + product.getId() +" </p>" +
+                          "<p>Name: " + product.getName() + " </p>" +
+                          "<p>Description: " + product.getDescription() + " </p>" +
+                          "<p>Price: "+ product.getPrice().toString() +" </p>";
+            resp.getWriter().println(info);
+        } else {
+            resp.getWriter().println("<p>Product not exist</p>");
+            resp.getWriter().println("<a href='" + getServletContext().getContextPath() +"'>" + "вернуться к таблице" + "</a>");
+            }
         }
+
     }
 }

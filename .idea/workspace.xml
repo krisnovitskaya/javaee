@@ -9,8 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/ProductServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
