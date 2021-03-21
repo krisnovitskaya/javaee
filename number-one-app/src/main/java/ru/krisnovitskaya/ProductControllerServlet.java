@@ -35,7 +35,8 @@ public class ProductControllerServlet extends HttpServlet {
             req.setAttribute("products", productRepository.findAll());
             getServletContext().getRequestDispatcher("/WEB-INF/views/product.jsp").forward(req, resp);
         } else if (req.getPathInfo().equals("/new")) {
-            // TODO отобразить пустую форму ввода
+            req.setAttribute("product", new Product());
+            getServletContext().getRequestDispatcher("/WEB-INF/views/product_form.jsp").forward(req, resp);
         } else {
             Matcher matcher = pathParam.matcher(req.getPathInfo());
             if (matcher.matches()) {

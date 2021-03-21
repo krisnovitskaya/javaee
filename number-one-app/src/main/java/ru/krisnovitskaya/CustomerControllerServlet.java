@@ -2,10 +2,7 @@ package ru.krisnovitskaya;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.krisnovitskaya.persist.Category;
-import ru.krisnovitskaya.persist.CategoryRepository;
-import ru.krisnovitskaya.persist.Customer;
-import ru.krisnovitskaya.persist.CustomerRepository;
+import ru.krisnovitskaya.persist.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,7 +34,8 @@ public class CustomerControllerServlet extends HttpServlet {
             req.setAttribute("customers", customerRepository.findAll());
             getServletContext().getRequestDispatcher("/WEB-INF/views/customer.jsp").forward(req, resp);
         } else if (req.getPathInfo().equals("/new")) {
-            // TODO отобразить пустую форму ввода
+            req.setAttribute("customer", new Customer());
+            getServletContext().getRequestDispatcher("/WEB-INF/views/customer_form.jsp").forward(req, resp);
         } else {
             Matcher matcher = pathParam.matcher(req.getPathInfo());
             if (matcher.matches()) {

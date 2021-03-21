@@ -13,8 +13,7 @@
 <div class="container">
     <div class="row py-2">
         <div class="col-12">
-            <!-- TODO добавить переход на форму новой категории -->
-            <a class="btn btn-primary" href="#">Add Category</a>
+            <a class="btn btn-primary" href="/category/new">Add Category</a>
         </div>
 
         <div class="col-12">

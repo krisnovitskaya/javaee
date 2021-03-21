@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.krisnovitskaya.persist.Category;
 import ru.krisnovitskaya.persist.CategoryRepository;
+import ru.krisnovitskaya.persist.Product;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,7 +35,8 @@ public class CategoryControllerServlet extends HttpServlet {
             req.setAttribute("categories", categoryRepository.findAll());
             getServletContext().getRequestDispatcher("/WEB-INF/views/category.jsp").forward(req, resp);
         } else if (req.getPathInfo().equals("/new")) {
-            // TODO отобразить пустую форму ввода
+            req.setAttribute("category", new Category());
+            getServletContext().getRequestDispatcher("/WEB-INF/views/category_form.jsp").forward(req, resp);
         } else {
             Matcher matcher = pathParam.matcher(req.getPathInfo());
             if (matcher.matches()) {

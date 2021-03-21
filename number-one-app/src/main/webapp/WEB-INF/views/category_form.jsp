@@ -18,7 +18,7 @@
                 <input value="${requestScope.category.id}" type="hidden" id="id" name="id">
 
                 <div class="form-group">
-                    <label>Name</label>
+                    <label>Title</label>
                     <input value="${requestScope.category.title}" type="text" class="form-control" id="title" name="title" placeholder="Enter name">
                 </div>
 
