@@ -13,7 +13,8 @@
 <div class="container">
     <div class="row py-2">
         <div class="col-12">
-            <a class="btn btn-primary" href="/category/new">Add Category</a>
+            <c:url value="/category/new" var="categoryNewUrl"/>
+            <a class="btn btn-primary" href="${categoryNewUrl}">Add Category</a>
         </div>
 
         <div class="col-12">

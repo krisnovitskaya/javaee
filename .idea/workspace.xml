@@ -8,15 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/CategoryControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/CategoryControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/CustomerControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/CustomerControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/ProductControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/java/ru/krisnovitskaya/ProductControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/category.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/category_form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/category_form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/number-one-app/src/main/webapp/WEB-INF/views/product.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
