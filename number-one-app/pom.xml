@@ -12,6 +12,11 @@
 
     <artifactId>number-one-app</artifactId>
 
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -21,16 +26,23 @@
         </dependency>
 
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <finalName>number-one-app</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
