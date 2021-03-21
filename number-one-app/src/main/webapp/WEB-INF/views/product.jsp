@@ -24,20 +24,11 @@
                     <th scope="col">Id</th>
                     <th scope="col">Name</th>
                     <th scope="col">Description</th>
+                    <th scope="col">Price</th>
                     <th scope="col">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-
-<%--                <%!--%>
-<%--                    private ProductRepository productRepository;--%>
-
-<%--                    @Override--%>
-<%--                    public void jspInit() {--%>
-<%--                        productRepository = (ProductRepository) getServletContext().getAttribute("productRepository");--%>
-<%--                    }--%>
-<%--                %>--%>
-
 
                 <c:choose>
                     <c:when test="${requestScope.products.isEmpty()}">
@@ -48,20 +39,19 @@
                         </tr>
                     </c:when>
                     <c:otherwise>
-                        <%--                <% for (Product product : (List<Product>) request.getAttribute("products")) { %>--%>
                         <c:forEach var="product" items="${requestScope.products}">
                             <tr>
                                 <th scope="row">
-                                        <%--                        <%= product.getId() %>--%>
                                     <c:out value="${product.id}"/>
                                 </th>
                                 <td>
-                                        <%--                        <%= product.getName() %>--%>
                                     <c:out value="${product.name}"/>
                                 </td>
                                 <td>
-                                        <%--                        <%= product.getDescription() %>--%>
                                     <c:out value="${product.description}"/>
+                                </td>
+                                <td>
+                                    <c:out value="${product.price}"/>
                                 </td>
                                 <td>
                                     <c:url value="/product/${product.id}" var="productUrl"/>
@@ -70,7 +60,7 @@
                                 </td>
                             </tr>
                         </c:forEach>
-                        <%--                <% } %>--%>
+
                     </c:otherwise>
                 </c:choose>
 
