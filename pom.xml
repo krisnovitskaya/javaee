@@ -7,6 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>number-one-app</module>
+        <module>java-jsf-app</module>
     </modules>
 
     <groupId>ru.krisnovitskaya</groupId>
