@@ -20,12 +20,21 @@ jobs:
         with:
           java-version: 11
 
+      - name: Build with Maven
+        id: mvn_build_1
+        run: |
+          cd number-one-app
+          mvn --batch-mode clean install wildfly:undeploy wildfly:deploy \
+          -Dwildfly.hostname=${{ secrets.WILDFLY_HOSTNAME }} \
+          -Dwildfly.username=${{ secrets.WILDFLY_LOGIN_ADMIN }} \
+          -Dwildfly.password=${{ secrets.WILDFLY_ADMIN_PASSWORD }}
+
 
       - name: Build with Maven
-          id: mvn_build
-          run: |
-            cd java-jsf-app
-            mvn --batch-mode clean install wildfly:undeploy wildfly:deploy \
-            -Dwildfly.hostname=${{ secrets.WILDFLY_HOSTNAME }} \
-            -Dwildfly.username=${{ secrets.WILDFLY_LOGIN_ADMIN }} \
-            -Dwildfly.password=${{ secrets.WILDFLY_ADMIN_PASSWORD }}
+        id: mvn_build_2
+        run: |
+          cd java-jsf-app
+          mvn --batch-mode clean install wildfly:undeploy wildfly:deploy \
+          -Dwildfly.hostname=${{ secrets.WILDFLY_HOSTNAME }} \
+          -Dwildfly.username=${{ secrets.WILDFLY_LOGIN_ADMIN }} \
+          -Dwildfly.password=${{ secrets.WILDFLY_ADMIN_PASSWORD }}
