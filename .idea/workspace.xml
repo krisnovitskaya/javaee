@@ -9,7 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/web-build-deploy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +47,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\javaee\java-jsf-app\src\main\java\ru\krisnovitskaya\persist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\javaee\java-jsf-app\src\main\webapp" />
       <recent name="D:\java\javaee\java-jsf-app\src\main\webapp\WEB-INF" />
       <recent name="D:\java\javaee" />
     </key>
@@ -85,10 +93,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1616337639535">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1617425186128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1616337639535" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617425186128" />
     <state width="347" height="442" key="Diff.GoToChangePopup" timestamp="1616003587821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
