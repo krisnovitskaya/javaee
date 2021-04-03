@@ -9,15 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/datasource.cli" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/mysql_driver.cli" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/datasource.cli" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/datasource.cli" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
