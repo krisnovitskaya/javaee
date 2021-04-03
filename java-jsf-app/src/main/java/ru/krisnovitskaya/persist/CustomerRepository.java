@@ -1,6 +1,8 @@
 package ru.krisnovitskaya.persist;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +10,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+@ApplicationScoped
+@Named
 public class CustomerRepository {
     private final Map<Long, Customer> customerMap = new ConcurrentHashMap<>();
 

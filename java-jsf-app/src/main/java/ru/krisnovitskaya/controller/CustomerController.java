@@ -1,7 +1,5 @@
 package ru.krisnovitskaya.controller;
 
-import ru.krisnovitskaya.persist.Category;
-import ru.krisnovitskaya.persist.CategoryRepository;
 import ru.krisnovitskaya.persist.Customer;
 import ru.krisnovitskaya.persist.CustomerRepository;
 
@@ -15,6 +13,7 @@ import java.util.List;
 @SessionScoped
 @Named
 public class CustomerController implements Serializable {
+
     @Inject
     private CustomerRepository customerRepository;
 

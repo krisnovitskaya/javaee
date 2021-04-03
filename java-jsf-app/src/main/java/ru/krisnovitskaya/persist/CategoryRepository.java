@@ -1,13 +1,16 @@
 package ru.krisnovitskaya.persist;
 
 import javax.annotation.PostConstruct;
-import java.math.BigDecimal;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+@ApplicationScoped
+@Named
 public class CategoryRepository {
     private final Map<Long, Category> categoryMap = new ConcurrentHashMap<>();
 
