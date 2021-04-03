@@ -1,11 +1,29 @@
 package ru.krisnovitskaya.persist;
 
+import javax.persistence.*;
 import java.math.BigInteger;
 
+@Entity
+@Table(name = "customers")
+@NamedQueries({
+        @NamedQuery(name = "deleteCustomerById", query = "delete from Customer c where c.id = :id"),
+        @NamedQuery(name = "findAllCustomer", query = "from Customer c"),
+        @NamedQuery(name = "count", query = "select count(c) from Customer c")
+})
 public class Customer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private Long id;
+
+    @Column
     private String name;
+
+    @Column
     private BigInteger phone;
+
+    @Column
     private String address;
 
     public Customer() {

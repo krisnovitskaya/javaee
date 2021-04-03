@@ -10,7 +10,6 @@ import javax.transaction.SystemException;
 import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
