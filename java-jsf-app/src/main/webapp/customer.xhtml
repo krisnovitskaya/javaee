@@ -74,7 +74,7 @@
                                              action="#{customerController.editCustomer(customer)}"/>
                             <h:commandButton value="Delete" styleClass="btn btn-danger"
                                              action="#{customerController.deleteCustomer(customer)}">
-                                <f:ajax event="click" render="productTableForm"/>
+                                <f:ajax event="click" render="customerTableForm"/>
                             </h:commandButton>
                         </h:column>
                     </h:dataTable>

@@ -2,6 +2,7 @@ package ru.krisnovitskaya.controller;
 
 import ru.krisnovitskaya.persist.Customer;
 import ru.krisnovitskaya.persist.CustomerRepository;
+import ru.krisnovitskaya.persist.Product;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -37,6 +38,11 @@ public class CustomerController implements Serializable {
 
     public String addCustomer(){
         this.customer = new Customer();
+        return "/customer_form.xhtml?faces-redirect=true";
+    }
+
+    public String editCustomer(Customer customer) {
+        this.customer = customer;
         return "/customer_form.xhtml?faces-redirect=true";
     }
 }

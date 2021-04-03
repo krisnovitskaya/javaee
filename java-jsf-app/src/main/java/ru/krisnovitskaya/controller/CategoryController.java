@@ -2,6 +2,7 @@ package ru.krisnovitskaya.controller;
 
 import ru.krisnovitskaya.persist.Category;
 import ru.krisnovitskaya.persist.CategoryRepository;
+import ru.krisnovitskaya.persist.Customer;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -35,6 +36,11 @@ public class CategoryController implements Serializable {
 
     public String addCategory(){
         this.category = new Category();
+        return "/category_form.xhtml?faces-redirect=true";
+    }
+
+    public String editCategory(Category category) {
+        this.category = category;
         return "/category_form.xhtml?faces-redirect=true";
     }
 }
