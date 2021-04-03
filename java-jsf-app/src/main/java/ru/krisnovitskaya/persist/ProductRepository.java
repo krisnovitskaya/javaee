@@ -44,7 +44,7 @@ public class ProductRepository {
     }
 
     private long count() {
-        return em.createNamedQuery("count", Long.class).getSingleResult();
+        return em.createNamedQuery("countProduct", Long.class).getSingleResult();
     }
 
     @Transactional

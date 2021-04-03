@@ -44,7 +44,7 @@ public class CategoryRepository {
     }
 
     private long count() {
-        return em.createNamedQuery("count", Long.class).getSingleResult();
+        return em.createNamedQuery("countCategory", Long.class).getSingleResult();
     }
 
     @Transactional
