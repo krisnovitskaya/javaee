@@ -5,6 +5,7 @@ import ru.krisnovitskaya.persist.CustomerRepository;
 import ru.krisnovitskaya.persist.Product;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.event.ComponentSystemEvent;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
@@ -20,23 +21,26 @@ public class CustomerController implements Serializable {
 
     private Customer customer;
 
-    public Customer getCustomer() {
-        return customer;
+    private List<Customer> customerList;
+
+    public void preloadData(ComponentSystemEvent componentSystemEvent) {
+        this.customerList = customerRepository.findAll();
     }
 
-    public void setCategory(Customer customer) {
-        this.customer = customer;
+    public List<Customer> findAll() {
+        return customerList;
     }
-    public List<Customer> findAll(){ return customerRepository.findAll();}
 
-    public void deleteCustomer(Customer customer) {customerRepository.delete(customer.getId());}
+    public void deleteCustomer(Customer customer) {
+        customerRepository.delete(customer.getId());
+    }
 
-    public String saveCustomer(){
+    public String saveCustomer() {
         customerRepository.save(customer);
         return "/customer.xhtml?faces-redirect=true";
     }
 
-    public String addCustomer(){
+    public String addCustomer() {
         this.customer = new Customer();
         return "/customer_form.xhtml?faces-redirect=true";
     }
@@ -44,5 +48,13 @@ public class CustomerController implements Serializable {
     public String editCustomer(Customer customer) {
         this.customer = customer;
         return "/customer_form.xhtml?faces-redirect=true";
+    }
+
+    public void setCategory(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Customer getCustomer() {
+        return customer;
     }
 }

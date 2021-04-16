@@ -10,7 +10,6 @@ import javax.transaction.SystemException;
 import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
@@ -45,7 +44,7 @@ public class ProductRepository {
     }
 
     private long count() {
-        return em.createNamedQuery("count", Long.class).getSingleResult();
+        return em.createNamedQuery("countProduct", Long.class).getSingleResult();
     }
 
     @Transactional
