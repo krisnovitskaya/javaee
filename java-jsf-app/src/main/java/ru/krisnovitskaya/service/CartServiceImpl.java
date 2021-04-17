@@ -3,6 +3,7 @@ package ru.krisnovitskaya.service;
 import ru.krisnovitskaya.service.repr.ProductRepr;
 
 import javax.ejb.Stateful;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -13,16 +14,16 @@ public class CartServiceImpl implements CartService{
 
     @Override
     public void add(ProductRepr productRepr) {
-
+        productMap.put(productRepr.getId(), productRepr);
     }
 
     @Override
     public void remove(long id) {
-
+        productMap.remove(id);
     }
 
     @Override
     public List<ProductRepr> findAll() {
-        return null;
+        return new ArrayList<>(productMap.values());
     }
 }

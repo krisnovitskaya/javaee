@@ -15,18 +15,18 @@ public class ProductRepr implements Serializable {
 
     private Long categoryId;
 
-    private String categoryName;
+    private String categoryTitle;
 
     public ProductRepr() {
     }
 
-    public ProductRepr(Long id, String name, String description, BigDecimal price, Long categoryId, String categoryName) {
+    public ProductRepr(Long id, String name, String description, BigDecimal price, Long categoryId, String categoryTitle) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.categoryId = categoryId;
-        this.categoryName = categoryName;
+        this.categoryTitle = categoryTitle;
     }
 
     public Long getId() {
@@ -69,11 +69,11 @@ public class ProductRepr implements Serializable {
         this.categoryId = categoryId;
     }
 
-    public String getCategoryName() {
-        return categoryName;
+    public String getCategoryTitle() {
+        return categoryTitle;
     }
 
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
+    public void setCategoryTitle(String categoryTitle) {
+        this.categoryTitle = categoryTitle;
     }
 }

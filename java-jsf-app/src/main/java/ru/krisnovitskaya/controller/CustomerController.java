@@ -2,11 +2,12 @@ package ru.krisnovitskaya.controller;
 
 import ru.krisnovitskaya.persist.Customer;
 import ru.krisnovitskaya.persist.CustomerRepository;
-import ru.krisnovitskaya.persist.Product;
+import ru.krisnovitskaya.service.CustomerService;
+import ru.krisnovitskaya.service.repr.CustomerRepr;
 
+import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
-import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
@@ -16,45 +17,45 @@ import java.util.List;
 @Named
 public class CustomerController implements Serializable {
 
-    @Inject
-    private CustomerRepository customerRepository;
+    @EJB
+    private CustomerService customerService;
 
-    private Customer customer;
+    private CustomerRepr customer;
 
-    private List<Customer> customerList;
+    private List<CustomerRepr> customerList;
 
     public void preloadData(ComponentSystemEvent componentSystemEvent) {
-        this.customerList = customerRepository.findAll();
+        this.customerList = customerService.findAll();
     }
 
-    public List<Customer> findAll() {
+    public List<CustomerRepr> findAll() {
         return customerList;
     }
 
     public void deleteCustomer(Customer customer) {
-        customerRepository.delete(customer.getId());
+        customerService.delete(customer.getId());
     }
 
     public String saveCustomer() {
-        customerRepository.save(customer);
+        customerService.save(customer);
         return "/customer.xhtml?faces-redirect=true";
     }
 
     public String addCustomer() {
-        this.customer = new Customer();
+        this.customer = new CustomerRepr();
         return "/customer_form.xhtml?faces-redirect=true";
     }
 
-    public String editCustomer(Customer customer) {
+    public String editCustomer(CustomerRepr customer) {
         this.customer = customer;
         return "/customer_form.xhtml?faces-redirect=true";
     }
 
-    public void setCategory(Customer customer) {
-        this.customer = customer;
-    }
-
-    public Customer getCustomer() {
+    public CustomerRepr getCustomer() {
         return customer;
+    }
+
+    public void setCustomer(CustomerRepr customer) {
+        this.customer = customer;
     }
 }

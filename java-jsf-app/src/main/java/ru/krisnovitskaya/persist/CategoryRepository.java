@@ -22,7 +22,7 @@ public class CategoryRepository {
         return em.getReference(Category.class, id);
     }
 
-    private long count() {
+    public long count() {
         return em.createNamedQuery("countCategory", Long.class).getSingleResult();
     }
 

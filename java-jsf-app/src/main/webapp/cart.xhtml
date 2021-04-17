@@ -18,23 +18,19 @@
 
 <h:body>
 
-    <f:event listener="#{productController.preloadData}" type="preRenderView"/>
+    <f:event listener="#{cartController.preloadData}" type="preRenderView"/>
 
     <ui:include src="WEB-INF/fragments/header.xhtml">
-        <ui:param name="pageName" value="Product"/>
+        <ui:param name="pageName" value="Cart"/>
     </ui:include>
 
 
     <div class="container">
         <div class="row py-2">
-            <h:form id="productTableForm">
-                <div class="col-12">
-                    <h:commandButton value="Add Product" styleClass="btn btn-success"
-                                     action="#{productController.addProduct()}"/>
-                </div>
+            <h:form id="cartTableForm">
 
                 <div class="col-12">
-                    <h:dataTable value="#{productController.findAll()}" var="product"
+                    <h:dataTable value="#{cartController.findAll()}" var="product"
                                  styleClass="table table-bordered my-2">
                         <h:column>
                             <f:facet name="header">Id</f:facet>
@@ -58,13 +54,9 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">Actions</f:facet>
-                            <h:commandButton value="AddToCart" styleClass="btn btn-success"
-                                             action="#{cartController.add(product)}"/>
-                            <h:commandButton value="Edit" styleClass="btn btn-success"
-                                             action="#{productController.editProduct(product)}"/>
-                            <h:commandButton value="Delete" styleClass="btn btn-danger"
-                                             action="#{productController.deleteProduct(product)}">
-                                <f:ajax event="click" render="productTableForm"/>
+                            <h:commandButton value="Remove" styleClass="btn btn-danger"
+                                             action="#{cartController.remove(product.id)}">
+                                <f:ajax event="click" render="cartTableForm"/>
                             </h:commandButton>
                         </h:column>
                     </h:dataTable>

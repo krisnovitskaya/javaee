@@ -9,7 +9,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
+      <change afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/CategoryServiceRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/CustomerServiceRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/repr/CategoryRepr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/repr/CustomerRepr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/cart.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/src/main/java/ru/krisnovitskaya/service/ProductServiceRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/ProductServiceRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-api/src/main/java/ru/krisnovitskaya/service/repr/ProductRepr.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/repr/ProductRepr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616004403149</updated>
-      <workItem from="1618599437859" duration="5947000" />
+      <workItem from="1618599437859" duration="12760000" />
     </task>
     <servers />
   </component>
