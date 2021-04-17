@@ -1,8 +1,13 @@
 package ru.krisnovitskaya.controller;
 
+import ru.krisnovitskaya.persist.Category;
+import ru.krisnovitskaya.persist.CategoryRepository;
 import ru.krisnovitskaya.persist.Product;
 import ru.krisnovitskaya.persist.ProductRepository;
+import ru.krisnovitskaya.service.ProductService;
+import ru.krisnovitskaya.service.repr.ProductRepr;
 
+import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
 import javax.inject.Inject;
@@ -14,45 +19,51 @@ import java.util.List;
 @Named
 public class ProductController implements Serializable {
 
-    @Inject
-    private ProductRepository productRepository;
+    @EJB
+    private ProductService productService;
 
-    private Product product;
+    @EJB
+    private CategoryRepository categoryRepository;
 
-    private List<Product> productList;
+    private ProductRepr product;
+
+    private List<ProductRepr> productList;
+
+    private List<Category> categoryList;
 
     public void preloadData(ComponentSystemEvent componentSystemEvent){
-        this.productList = productRepository.findAll();
+        this.productList = productService.findAllProductWithCategory();
+        this.categoryList = categoryRepository.findAll();
     }
 
-    public List<Product> findAll() {
+    public List<ProductRepr> findAll() {
         return productList;
     }
 
-    public String editProduct(Product product) {
+    public String editProduct(ProductRepr product) {
         this.product = product;
         return "/product_form.xhtml?faces-redirect=true";
     }
 
     public void deleteProduct(Product product) {
-        productRepository.delete(product.getId());
+        productService.delete(product.getId());
     }
 
     public String saveProduct() {
-        productRepository.save(product);
+        productService.save(product);
         return "/product.xhtml?faces-redirect=true";
     }
 
     public String addProduct() {
-        this.product = new Product();
+        this.product = new ProductRepr();
         return "/product_form.xhtml?faces-redirect=true";
     }
 
-    public Product getProduct() {
+    public ProductRepr getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(ProductRepr product) {
         this.product = product;
     }
 }

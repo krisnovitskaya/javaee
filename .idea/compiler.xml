@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="product-api" />
         <module name="number-one-app" />
+        <module name="client-app" />
         <module name="java-jsf-app" />
       </profile>
     </annotationProcessing>

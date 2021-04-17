@@ -1,6 +1,7 @@
 package ru.krisnovitskaya.persist;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
@@ -17,6 +18,9 @@ public class Category {
 
     @Column
     private String title;
+
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<Product> products;
 
     public Category(Long id, String title) {
         this.id = id;
@@ -40,5 +44,13 @@ public class Category {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }
