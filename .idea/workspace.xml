@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CartController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <updated>1616004403149</updated>
       <workItem from="1618599437859" duration="13316000" />
       <workItem from="1618650265936" duration="4446000" />
-      <workItem from="1619238210302" duration="676000" />
+      <workItem from="1619238210302" duration="993000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,7 @@ import java.util.List;
 public class CartController implements Serializable {
 
     @EJB
-    public CartService cartService;
+    private CartService cartService;
 
     private List<ProductRepr> cartList;
 
