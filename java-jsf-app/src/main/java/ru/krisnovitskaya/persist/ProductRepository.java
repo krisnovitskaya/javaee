@@ -41,10 +41,10 @@ public class ProductRepository {
     }
 
     public List<Product> findByName(String name){
-        return  em.createNamedQuery("findAllProductByName", Product.class).getResultList();
+        return  em.createNamedQuery("findAllProductByName", Product.class).setParameter("name", name).getResultList();
     }
 
     public List<Product> findAllByCategoryId(Long id){
-        return em.createNamedQuery("findAllProductByCategory", Product.class).getResultList();
+        return em.createNamedQuery("findAllProductByCategory", Product.class).setParameter("id", id).getResultList();
     }
 }
