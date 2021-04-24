@@ -39,4 +39,12 @@ public class ProductRepository {
     public List<Product> findAll() {
         return em.createNamedQuery("findAllProduct", Product.class).getResultList();
     }
+
+    public List<Product> findByName(String name){
+        return  em.createNamedQuery("findAllProductByName", Product.class).getResultList();
+    }
+
+    public List<Product> findAllByCategoryId(Long id){
+        return em.createNamedQuery("findAllProductByCategory", Product.class).getResultList();
+    }
 }

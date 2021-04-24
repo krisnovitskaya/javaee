@@ -1,0 +1,56 @@
+GET http://localhost:8080/java-jsf-app/api/v1/product
+
+###
+
+GET http://localhost:8080/java-jsf-app/api/v1/product/2
+
+###
+
+POST  http://localhost:8080/java-jsf-app/api/v1/product
+Content-Type: application/json
+
+{
+  "description": "Description",
+  "name": "testproduct",
+  "price": 1000.00,
+  "categoryId": 3
+}
+
+###
+
+PUT http://localhost:8080/java-jsf-app/api/v1/product
+Content-Type: application/json
+
+{
+  "id": 5,
+  "description": "Description",
+  "name": "Product",
+  "price": 10.00,
+  "categoryId": 1
+}
+
+###
+
+DELETE http://localhost:8080/java-jsf-app/api/v1/product/5
+
+
+###
+
+GET http://localhost:8080/java-jsf-app/api/v1/category
+
+###
+
+POST  http://localhost:8080/java-jsf-app/api/v1/category
+Content-Type: application/json
+
+{
+  "title": "New Category Title"
+}
+
+###
+
+GET http://localhost:8080/java-jsf-app/api/v1/product/find_by_name?name=testproduct
+
+###
+
+GET http://localhost:8080/java-jsf-app/api/v1/product/find_by_category?category=3
