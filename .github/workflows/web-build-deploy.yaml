@@ -3,11 +3,11 @@ name: number-one-app build and deploy to remote wildfly
 on:
   push:
     branches:
-      - master
+#      - master
       - 'homework/*'
-  pull_request:
-    branches:
-      - master
+#  pull_request:
+#    branches:
+#      - master
 jobs:
   build:
     runs-on: ubuntu-latest

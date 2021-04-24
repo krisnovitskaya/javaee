@@ -35,10 +35,10 @@ public interface ProductResource {
     @GET
     @Path("/find_by_name")
     @Produces(MediaType.APPLICATION_JSON)
-    List<ProductRepr> findByName(@QueryParam("name") String name);
+    List<ProductRepr> findByName(@QueryParam("name") @DefaultValue("") String name);
 
     @GET
     @Path("/find_by_category")
     @Produces(MediaType.APPLICATION_JSON)
-    List<ProductRepr> findByCategory(@QueryParam("category") Long categoryId);
+    List<ProductRepr> findByCategory(@QueryParam("category") @DefaultValue("0") Long categoryId);
 }
