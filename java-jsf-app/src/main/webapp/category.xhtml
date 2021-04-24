@@ -1,7 +1,9 @@
 <html lang="en"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:pp="http://primefaces.org/ui">
+      xmlns:pp="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+>
 
 <h:head>
     <!-- Required meta tags -->
@@ -18,6 +20,10 @@
 <h:body>
 
     <f:event listener="#{categoryController.preloadData}" type="preRenderView"/>
+
+    <ui:include src="WEB-INF/fragments/header.xhtml">
+        <ui:param name="pageName" value="Category"/>
+    </ui:include>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">EShop</a>

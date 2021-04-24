@@ -3,11 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/client-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-jsf-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-jsf-app/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/number-one-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/number-one-app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product-api/src/main/resources" charset="UTF-8" />
   </component>
 </project>

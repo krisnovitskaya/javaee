@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>ru.krisnovitskaya</groupId>
-            <artifactId>product-api</artifactId>
+            <artifactId>data-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

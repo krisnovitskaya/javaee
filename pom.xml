@@ -6,10 +6,10 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>number-one-app</module>
-        <module>product-api</module>
-        <module>java-jsf-app</module>
+        <module>data-api</module>
         <module>client-app</module>
+        <module>number-one-app</module>
+        <module>java-jsf-app</module>
     </modules>
 
     <groupId>ru.krisnovitskaya</groupId>

@@ -9,31 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change afterPath="$PROJECT_DIR$/client-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-app/src/main/java/ru/krisnovitskaya/EjbClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-app/src/main/resources/wildfly-jndi.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/fragments/header.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-api/src/main/java/ru/krisnovitskaya/service/ProductServiceRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-api/src/main/java/ru/krisnovitskaya/service/repr/ProductRepr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CartController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../errands" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -126,7 +102,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616004403149</updated>
-      <workItem from="1618599437859" duration="5041000" />
+      <workItem from="1618599437859" duration="13316000" />
+      <workItem from="1618650265936" duration="4446000" />
+      <workItem from="1619238210302" duration="993000" />
     </task>
     <servers />
   </component>

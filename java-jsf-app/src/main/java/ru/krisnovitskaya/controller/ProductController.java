@@ -22,18 +22,12 @@ public class ProductController implements Serializable {
     @EJB
     private ProductService productService;
 
-    @EJB
-    private CategoryRepository categoryRepository;
-
     private ProductRepr product;
 
     private List<ProductRepr> productList;
 
-    private List<Category> categoryList;
-
     public void preloadData(ComponentSystemEvent componentSystemEvent){
         this.productList = productService.findAllProductWithCategory();
-        this.categoryList = categoryRepository.findAll();
     }
 
     public List<ProductRepr> findAll() {

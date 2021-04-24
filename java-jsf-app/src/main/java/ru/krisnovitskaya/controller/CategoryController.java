@@ -1,10 +1,11 @@
 package ru.krisnovitskaya.controller;
 
-import ru.krisnovitskaya.persist.Category;
-import ru.krisnovitskaya.persist.CategoryRepository;
+import ru.krisnovitskaya.service.CategoryService;
+import ru.krisnovitskaya.service.repr.CategoryRepr;
+
+import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
-import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
@@ -12,45 +13,45 @@ import java.util.List;
 @SessionScoped
 @Named
 public class CategoryController implements Serializable {
-    @Inject
-    private CategoryRepository categoryRepository;
+    @EJB
+    private CategoryService categoryService;
 
-    private Category category;
+    private CategoryRepr category;
 
-    private List<Category> categoryList;
+    private List<CategoryRepr> categoryList;
 
     public void preloadData(ComponentSystemEvent componentSystemEvent) {
-        this.categoryList = categoryRepository.findAll();
+        this.categoryList = categoryService.findAll();
     }
 
-    public List<Category> findAll() {
+    public List<CategoryRepr> findAll() {
         return categoryList;
     }
 
-    public void deleteCategory(Category category) {
-        categoryRepository.delete(category.getId());
+    public void deleteCategory(CategoryRepr category) {
+        categoryService.delete(category.getId());
     }
 
     public String saveCategory() {
-        categoryRepository.save(category);
+        categoryService.save(category);
         return "/category.xhtml?faces-redirect=true";
     }
 
     public String addCategory() {
-        this.category = new Category();
+        this.category = new CategoryRepr();
         return "/category_form.xhtml?faces-redirect=true";
     }
 
-    public String editCategory(Category category) {
+    public String editCategory(CategoryRepr category) {
         this.category = category;
         return "/category_form.xhtml?faces-redirect=true";
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(CategoryRepr category) {
         this.category = category;
     }
 
-    public Category getCategory() {
+    public CategoryRepr getCategory() {
         return category;
     }
 }
