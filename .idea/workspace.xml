@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas" />
+    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../errands" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -90,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616004403149</updated>
       <workItem from="1618599437859" duration="13316000" />
+      <workItem from="1618650265936" duration="4446000" />
     </task>
     <servers />
   </component>
