@@ -4,7 +4,9 @@ import ru.krisnovitskaya.persist.Category;
 import ru.krisnovitskaya.persist.CategoryRepository;
 import ru.krisnovitskaya.persist.Product;
 import ru.krisnovitskaya.persist.ProductRepository;
+import ru.krisnovitskaya.service.CategoryService;
 import ru.krisnovitskaya.service.ProductService;
+import ru.krisnovitskaya.service.repr.CategoryRepr;
 import ru.krisnovitskaya.service.repr.ProductRepr;
 
 import javax.ejb.EJB;
@@ -22,12 +24,18 @@ public class ProductController implements Serializable {
     @EJB
     private ProductService productService;
 
+    @EJB
+    private CategoryService categoryService;
+
     private ProductRepr product;
 
     private List<ProductRepr> productList;
 
+    private List<CategoryRepr> categories;
+
     public void preloadData(ComponentSystemEvent componentSystemEvent){
         this.productList = productService.findAllProductWithCategory();
+        this.categories = categoryService.findAll();
     }
 
     public List<ProductRepr> findAll() {
@@ -59,5 +67,13 @@ public class ProductController implements Serializable {
 
     public void setProduct(ProductRepr product) {
         this.product = product;
+    }
+
+    public List<CategoryRepr> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<CategoryRepr> categories) {
+        this.categories = categories;
     }
 }
