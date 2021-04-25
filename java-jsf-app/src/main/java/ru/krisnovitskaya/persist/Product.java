@@ -9,7 +9,9 @@ import java.math.BigDecimal;
         @NamedQuery(name = "deleteProductById", query = "delete from Product p where p.id = :id"),
         @NamedQuery(name = "findAllProduct", query = "from Product p"),
         @NamedQuery(name = "countProduct", query = "select count(p) from Product p"),
-        @NamedQuery(name = "findAllProductWithCategory", query = "select p from Product p left join fetch p.category")
+        @NamedQuery(name = "findAllProductWithCategory", query = "select p from Product p left join fetch p.category"),
+        @NamedQuery(name = "findAllProductByName", query = "select p from Product p left join fetch p.category where p.name = :name"),
+        @NamedQuery(name = "findAllProductByCategory", query = "select p from Product p left join fetch p.category where p.category.id = :id")
 })
 public class Product {
 

@@ -2,6 +2,7 @@ package ru.krisnovitskaya.service;
 
 import ru.krisnovitskaya.persist.Category;
 import ru.krisnovitskaya.persist.CategoryRepository;
+import ru.krisnovitskaya.rest.CategoryResource;
 import ru.krisnovitskaya.service.repr.CategoryRepr;
 
 import javax.ejb.EJB;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Stateless
-public class CategoryServiceImpl implements CategoryService, CategoryServiceRemote{
+public class CategoryServiceImpl implements CategoryService, CategoryServiceRemote, CategoryResource {
 
     @EJB
     private CategoryRepository categoryRepository;
@@ -37,6 +38,22 @@ public class CategoryServiceImpl implements CategoryService, CategoryServiceRemo
     @Override
     public CategoryRepr findById(long id) {
         return createCategoryRepr(categoryRepository.findById(id));
+    }
+
+    @Override
+    public void insert(CategoryRepr categoryRepr) {
+        if (categoryRepr.getId() != null) {
+            throw new IllegalArgumentException("Id new insert Category must be null");
+        }
+        save(categoryRepr);
+    }
+
+    @Override
+    public void update(CategoryRepr categoryRepr) {
+        if (categoryRepr.getId() == null) {
+            throw new IllegalArgumentException("Id update Category must be not null");
+        }
+        save(categoryRepr);
     }
 
     @Override
