@@ -1,8 +1,11 @@
 package ru.krisnovitskaya.controller;
 
+import ru.krisnovitskaya.dtos.UserRepr;
 import ru.krisnovitskaya.persist.Customer;
 import ru.krisnovitskaya.persist.CustomerRepository;
 import ru.krisnovitskaya.service.CustomerService;
+import ru.krisnovitskaya.service.UserService;
+import ru.krisnovitskaya.service.repr.CategoryRepr;
 import ru.krisnovitskaya.service.repr.CustomerRepr;
 
 import javax.ejb.EJB;
@@ -20,12 +23,18 @@ public class CustomerController implements Serializable {
     @EJB
     private CustomerService customerService;
 
+    @EJB
+    private UserService userService;
+
     private CustomerRepr customer;
 
     private List<CustomerRepr> customerList;
 
+    private List<UserRepr> users;
+
     public void preloadData(ComponentSystemEvent componentSystemEvent) {
         this.customerList = customerService.findAll();
+        this.users = userService.getAllUsers();
     }
 
     public List<CustomerRepr> findAll() {

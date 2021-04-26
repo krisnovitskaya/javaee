@@ -12,11 +12,33 @@ public class CustomerRepr implements Serializable {
 
     private String address;
 
-    public CustomerRepr(Long id, String name, BigInteger phone, String address) {
+    private Long userId;
+
+    private String login;
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public CustomerRepr(Long id, String name, BigInteger phone, String address, Long userId, String login) {
         this.id = id;
         this.name = name;
         this.phone = phone;
         this.address = address;
+        this.userId = userId;
+        this.login = login;
     }
 
     public CustomerRepr() {

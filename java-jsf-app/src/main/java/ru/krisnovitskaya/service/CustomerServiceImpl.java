@@ -4,6 +4,7 @@ import ru.krisnovitskaya.persist.Customer;
 import ru.krisnovitskaya.persist.CustomerRepository;
 import ru.krisnovitskaya.service.repr.CustomerRepr;
 
+
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
@@ -49,6 +50,11 @@ public class CustomerServiceImpl implements CustomerService, CustomerServiceRemo
     }
 
     private static CustomerRepr createCustomerRepr(Customer customer){
-        return new CustomerRepr(customer.getId(), customer.getName(), customer.getPhone(), customer.getAddress());
+        return new CustomerRepr(customer.getId(),
+                customer.getName(),
+                customer.getPhone(),
+                customer.getAddress(),
+                customer.getUser().getId(),
+                customer.getUser().getLogin());
     }
 }
