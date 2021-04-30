@@ -36,7 +36,7 @@ public class RoleRepr implements Serializable {
     }
     public RoleRepr(Role r) {
         this.id = r.getId();
-        this.title = r.getTitle();
+        this.title = r.getName();
     }
 
     @Override

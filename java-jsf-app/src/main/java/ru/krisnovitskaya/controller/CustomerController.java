@@ -47,17 +47,17 @@ public class CustomerController implements Serializable {
 
     public String saveCustomer() {
         customerService.save(customer);
-        return "/customer.xhtml?faces-redirect=true";
+        return "/manager/customer.xhtml?faces-redirect=true";
     }
 
     public String addCustomer() {
         this.customer = new CustomerRepr();
-        return "/customer_form.xhtml?faces-redirect=true";
+        return "/manager/customer_form.xhtml?faces-redirect=true";
     }
 
     public String editCustomer(CustomerRepr customer) {
         this.customer = customer;
-        return "/customer_form.xhtml?faces-redirect=true";
+        return "/manager/customer_form.xhtml?faces-redirect=true";
     }
 
     public CustomerRepr getCustomer() {
@@ -66,5 +66,13 @@ public class CustomerController implements Serializable {
 
     public void setCustomer(CustomerRepr customer) {
         this.customer = customer;
+    }
+
+    public List<UserRepr> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<UserRepr> users) {
+        this.users = users;
     }
 }

@@ -2,7 +2,6 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
 >
 
 <h:head>
@@ -18,10 +17,10 @@
 </h:head>
 
 <h:body>
-    <ui:include src="WEB-INF/fragments/header.xhtml">
-        <ui:param name="pageName" value="Customer"/>
-    </ui:include>
 
+    <ui:include src="../WEB-INF/fragments/header.xhtml">
+        <ui:param name="pageName" value="Category"/>
+    </ui:include>
 
     <div class="container">
         <div class="row py-2">
@@ -30,34 +29,11 @@
                     <div class="form-group">
                         <h:outputLabel value="Name"/>
                         <h:inputText styleClass="form-control" id="name"
-                                     value="#{customerController.customer.name}"
-                                     placeholder="Enter name"/>
-                    </div>
-                    <div class="form-group">
-                        <h:outputLabel value="Phone"/>
-                        <h:inputText styleClass="form-control" p:type="number" id="phone"
-                                     value="#{customerController.customer.phone}"
-                                     placeholder="Enter phone"/>
-                    </div>
-                    <div class="form-group">
-                        <h:outputLabel value="Address"/>
-                        <h:inputText styleClass="form-control" id="address"
-                                     value="#{customerController.customer.address}"
-                                     placeholder="Enter address"/>
-                    </div>
-                    <div class="form-group">
-                        <h:outputLabel value="User"/>
-                        <h:selectOneListbox size="1" styleClass="form-control" id="customerUser"
-                                            value="#{customerController.customer.userId}">
-                            <f:selectItems value="#{customerController.users}"
-                                           var="user"
-                                           itemValue="#{user.id}"
-                                           itemLabel="#{user.login}"
-                                           itemLabelEscaped="true"/>
-                        </h:selectOneListbox>
+                                     value="#{categoryController.category.title}"
+                                     placeholder="Enter title"/>
                     </div>
                     <h:commandButton value="Submit" styleClass="btn btn-primary"
-                                     action="#{customerController.saveCustomer()}"/>
+                                     action="#{categoryController.saveCategory()}"/>
                 </h:form>
             </div>
         </div>

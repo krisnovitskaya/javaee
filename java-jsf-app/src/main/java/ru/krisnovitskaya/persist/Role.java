@@ -16,8 +16,8 @@ public class Role implements Serializable {
     private Long id;
 
 
-    @Column(name = "title")
-    private String title;
+    @Column(name = "name")
+    private String name;
 
     @ManyToMany(mappedBy = "roles")
     private Set<User> users;
@@ -27,13 +27,13 @@ public class Role implements Serializable {
 
     public Role(Long id, String title, Set<User> users) {
         this.id = id;
-        this.title = title;
+        this.name = title;
         this.users = users;
     }
 
     public Role(RoleRepr r) {
         this.id = r.getId();
-        this.title = r.getTitle();
+        this.name = r.getTitle();
     }
 
     public Long getId() {
@@ -44,12 +44,12 @@ public class Role implements Serializable {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String title) {
+        this.name = title;
     }
 
     public Set<User> getUsers() {

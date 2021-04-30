@@ -44,7 +44,7 @@ public class ProductController implements Serializable {
 
     public String editProduct(ProductRepr product) {
         this.product = product;
-        return "/product_form.xhtml?faces-redirect=true";
+        return "/manager/product_form.xhtml?faces-redirect=true";
     }
 
     public void deleteProduct(Product product) {
@@ -53,12 +53,12 @@ public class ProductController implements Serializable {
 
     public String saveProduct() {
         productService.save(product);
-        return "/product.xhtml?faces-redirect=true";
+        return "/manager/product.xhtml?faces-redirect=true";
     }
 
     public String addProduct() {
         this.product = new ProductRepr();
-        return "/product_form.xhtml?faces-redirect=true";
+        return "/manager/product_form.xhtml?faces-redirect=true";
     }
 
     public ProductRepr getProduct() {

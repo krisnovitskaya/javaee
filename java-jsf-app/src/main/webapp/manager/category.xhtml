@@ -2,7 +2,8 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:pp="http://primefaces.org/ui"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+>
 
 <h:head>
     <!-- Required meta tags -->
@@ -17,51 +18,40 @@
 </h:head>
 
 <h:body>
-    <f:event listener="#{customerController.preloadData}" type="preRenderView"/>
 
-    <ui:include src="WEB-INF/fragments/header.xhtml">
-        <ui:param name="pageName" value="Customer"/>
+    <f:event listener="#{categoryController.preloadData}" type="preRenderView"/>
+
+    <ui:include src="../WEB-INF/fragments/header.xhtml">
+        <ui:param name="pageName" value="Category"/>
     </ui:include>
 
     <div class="container">
         <div class="row py-2">
-            <h:form id="customerTableForm">
+            <h:form id="categoryTableForm">
                 <div class="col-12">
-                    <h:commandButton value="Add Customer" styleClass="btn btn-success"
-                                     action="#{customerController.addCustomer()}"/>
+                    <h:commandButton value="Add Category" styleClass="btn btn-success"
+                                     action="#{categoryController.addCategory()}" rendered="#{request.isUserInRole('ADMIN') || request.isUserInRole('MANAGER')}"/>
                 </div>
 
                 <div class="col-12">
-                    <h:dataTable value="#{customerController.findAll()}" var="customer"
+                    <h:dataTable value="#{categoryController.findAll()}" var="category"
                                  styleClass="table table-bordered my-2">
                         <h:column>
                             <f:facet name="header">Id</f:facet>
-                            #{customer.id}
+                            #{category.id}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Name</f:facet>
-                            #{customer.name}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">Phone</f:facet>
-                            #{customer.phone}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">Address</f:facet>
-                            #{customer.address}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">User</f:facet>
-                            #{customer.login}
+                            <f:facet name="header">Title</f:facet>
+                            #{category.title}
                         </h:column>
                         <h:column>
                             <f:facet name="header">Actions</f:facet>
 
                             <h:commandButton value="Edit" styleClass="btn btn-success"
-                                             action="#{customerController.editCustomer(customer)}"/>
+                                             action="#{categoryController.editCategory(category)}"/>
                             <h:commandButton value="Delete" styleClass="btn btn-danger"
-                                             action="#{customerController.deleteCustomer(customer)}">
-                                <f:ajax event="click" render="customerTableForm"/>
+                                             action="#{categoryController.deleteCategory(category)}">
+                                <f:ajax event="click" render="categoryTableForm"/>
                             </h:commandButton>
                         </h:column>
                     </h:dataTable>

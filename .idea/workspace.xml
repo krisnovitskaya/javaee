@@ -9,29 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/security.cli" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/RoleRepr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/UserRepr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/admin/user.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/admin/user_form.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/login.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/repr/CustomerRepr.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-api/src/main/java/ru/krisnovitskaya/service/repr/CustomerRepr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/RoleRepr.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/RoleRepr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/fragments/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/fragments/header.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/category.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/category_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/customer.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/customer_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/product_form.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +72,7 @@
       <recent name="D:\java\javaee\java-jsf-app\src\main\java\ru\krisnovitskaya\persist" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\javaee\java-jsf-app\src\main\webapp\manager" />
       <recent name="D:\java\javaee\java-jsf-app\src\main\webapp" />
       <recent name="D:\java\javaee\java-jsf-app\src\main\webapp\WEB-INF" />
       <recent name="D:\java\javaee" />
@@ -174,7 +166,9 @@
       <workItem from="1618650265936" duration="4446000" />
       <workItem from="1619238210302" duration="993000" />
       <workItem from="1619347675424" duration="13889000" />
-      <workItem from="1619463298387" duration="4101000" />
+      <workItem from="1619463298387" duration="5311000" />
+      <workItem from="1619548939071" duration="1945000" />
+      <workItem from="1619819222208" duration="1366000" />
     </task>
     <servers />
   </component>
