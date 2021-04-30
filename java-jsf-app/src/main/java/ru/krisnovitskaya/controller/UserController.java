@@ -5,6 +5,7 @@ import ru.krisnovitskaya.dtos.UserRepr;
 import ru.krisnovitskaya.service.RoleService;
 import ru.krisnovitskaya.service.UserService;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -48,11 +49,13 @@ public class UserController implements Serializable {
         return users;
     }
 
+    @RolesAllowed({"ADMIN"})
     public String editUser(UserRepr user) {
         this.user = user;
         return "/admin/user_form.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"ADMIN"})
     public void deleteUser(UserRepr user) {
         userService.delete(user.getId());
     }
@@ -62,6 +65,7 @@ public class UserController implements Serializable {
         return "/admin/user_form.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"ADMIN"})
     public String saveUser() {
         userService.saveOrUpdate(this.user);
         return "/admin/user.xhtml?faces-redirect=true";

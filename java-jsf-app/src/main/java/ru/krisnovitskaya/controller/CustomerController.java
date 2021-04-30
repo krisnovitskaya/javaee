@@ -8,6 +8,7 @@ import ru.krisnovitskaya.service.UserService;
 import ru.krisnovitskaya.service.repr.CategoryRepr;
 import ru.krisnovitskaya.service.repr.CustomerRepr;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
@@ -41,20 +42,24 @@ public class CustomerController implements Serializable {
         return customerList;
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public void deleteCustomer(Customer customer) {
         customerService.delete(customer.getId());
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String saveCustomer() {
         customerService.save(customer);
         return "/manager/customer.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String addCustomer() {
         this.customer = new CustomerRepr();
         return "/manager/customer_form.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String editCustomer(CustomerRepr customer) {
         this.customer = customer;
         return "/manager/customer_form.xhtml?faces-redirect=true";

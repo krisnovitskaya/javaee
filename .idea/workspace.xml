@@ -8,22 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/RoleRepr.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/dtos/RoleRepr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/persist/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/fragments/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/fragments/header.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/category.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/category_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/category_form.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/customer.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/customer_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/customer_form.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/manager/product_form.xhtml" afterDir="false" />
-    </list>
+    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +153,7 @@
       <workItem from="1619347675424" duration="13889000" />
       <workItem from="1619463298387" duration="5311000" />
       <workItem from="1619548939071" duration="1945000" />
-      <workItem from="1619819222208" duration="1366000" />
+      <workItem from="1619819222208" duration="1757000" />
     </task>
     <servers />
   </component>

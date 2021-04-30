@@ -9,6 +9,7 @@ import ru.krisnovitskaya.service.ProductService;
 import ru.krisnovitskaya.service.repr.CategoryRepr;
 import ru.krisnovitskaya.service.repr.ProductRepr;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.event.ComponentSystemEvent;
@@ -42,20 +43,24 @@ public class ProductController implements Serializable {
         return productList;
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String editProduct(ProductRepr product) {
         this.product = product;
         return "/manager/product_form.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public void deleteProduct(Product product) {
         productService.delete(product.getId());
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String saveProduct() {
         productService.save(product);
-        return "/manager/product.xhtml?faces-redirect=true";
+        return "/product.xhtml?faces-redirect=true";
     }
 
+    @RolesAllowed({"MANAGER","ADMIN"})
     public String addProduct() {
         this.product = new ProductRepr();
         return "/manager/product_form.xhtml?faces-redirect=true";
