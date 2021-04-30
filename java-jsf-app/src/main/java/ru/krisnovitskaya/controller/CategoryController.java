@@ -34,17 +34,17 @@ public class CategoryController implements Serializable {
 
     public String saveCategory() {
         categoryService.save(category);
-        return "/category.xhtml?faces-redirect=true";
+        return "/manager/category.xhtml?faces-redirect=true";
     }
 
     public String addCategory() {
         this.category = new CategoryRepr();
-        return "/category_form.xhtml?faces-redirect=true";
+        return "/manager/category_form.xhtml?faces-redirect=true";
     }
 
     public String editCategory(CategoryRepr category) {
         this.category = category;
-        return "/category_form.xhtml?faces-redirect=true";
+        return "/manager/category_form.xhtml?faces-redirect=true";
     }
 
     public void setCategory(CategoryRepr category) {

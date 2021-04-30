@@ -1,8 +1,8 @@
-<html lang="en"
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
->
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
     <!-- Required meta tags -->
@@ -17,35 +17,32 @@
 </h:head>
 
 <h:body>
-    <ui:include src="WEB-INF/fragments/header.xhtml">
-        <ui:param name="pageName" value="Customer"/>
-    </ui:include>
 
+    <ui:include src="../WEB-INF/fragments/header.xhtml">
+        <ui:param name="pageName" value="User"/>
+    </ui:include>
 
     <div class="container">
         <div class="row py-2">
             <div class="col-12">
-                <h:form>
+                <h:form id="productForm">
                     <div class="form-group">
-                        <h:outputLabel value="Name"/>
-                        <h:inputText styleClass="form-control" id="name"
-                                     value="#{customerController.customer.name}"
-                                     placeholder="Enter name"/>
+                        <h:outputLabel value="Name" for="login"/>
+                        <h:inputText styleClass="form-control" id="login" name="login" placeholder="Enter login"
+                                     value="#{userController.user.login}"/>
                     </div>
                     <div class="form-group">
-                        <h:outputLabel value="Phone"/>
-                        <h:inputText styleClass="form-control" p:type="number" id="phone"
-                                     value="#{customerController.customer.phone}"
-                                     placeholder="Enter phone"/>
+                        <h:outputLabel value="Password" for="password"/>
+                        <h:inputText p:type="password" styleClass="form-control" id="password" name="password"
+                                     placeholder="Enter password"
+                                     value="#{userController.user.password}"/>
                     </div>
                     <div class="form-group">
-                        <h:outputLabel value="Address"/>
-                        <h:inputText styleClass="form-control" id="address"
-                                     value="#{customerController.customer.address}"
-                                     placeholder="Enter address"/>
+                        <h:selectManyCheckbox value="#{userController.user.roles}" layout="pageDirection">
+                            <f:selectItems value="#{userController.allRoles}" />
+                        </h:selectManyCheckbox>
                     </div>
-                    <h:commandButton value="Submit" styleClass="btn btn-primary"
-                                     action="#{customerController.saveCustomer()}"/>
+                    <h:commandButton value="Submit" styleClass="btn btn-primary" action="#{userController.saveUser()}"/>
                 </h:form>
             </div>
         </div>

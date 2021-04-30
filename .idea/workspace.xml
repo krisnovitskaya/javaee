@@ -8,13 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/datasource.cli" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/datasource.cli" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/mysql_driver.cli" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/mysql_driver.cli" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/java/ru/krisnovitskaya/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/java-jsf-app/src/main/webapp/product_form.xhtml" afterDir="false" />
-    </list>
+    <list default="true" id="4419abbd-d0c2-40e9-b839-479158fe9274" name="Default Changelist" comment="cas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +57,7 @@
       <recent name="D:\java\javaee\java-jsf-app\src\main\java\ru\krisnovitskaya\persist" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\javaee\java-jsf-app\src\main\webapp\manager" />
       <recent name="D:\java\javaee\java-jsf-app\src\main\webapp" />
       <recent name="D:\java\javaee\java-jsf-app\src\main\webapp\WEB-INF" />
       <recent name="D:\java\javaee" />
@@ -127,6 +122,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="8787" />
       <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8787" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
       <method v="2" />
     </configuration>
     <list>
@@ -151,7 +150,10 @@
       <workItem from="1618599437859" duration="13316000" />
       <workItem from="1618650265936" duration="4446000" />
       <workItem from="1619238210302" duration="993000" />
-      <workItem from="1619347675424" duration="4602000" />
+      <workItem from="1619347675424" duration="13889000" />
+      <workItem from="1619463298387" duration="5311000" />
+      <workItem from="1619548939071" duration="1945000" />
+      <workItem from="1619819222208" duration="1757000" />
     </task>
     <servers />
   </component>

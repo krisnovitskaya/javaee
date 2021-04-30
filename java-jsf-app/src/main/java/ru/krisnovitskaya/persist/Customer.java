@@ -26,6 +26,10 @@ public class Customer {
     @Column
     private String address;
 
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     public Customer() {
     }
 
@@ -34,6 +38,14 @@ public class Customer {
         this.name = name;
         this.phone = phone;
         this.address = address;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Long getId() {
